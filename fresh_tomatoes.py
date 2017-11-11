@@ -1,6 +1,7 @@
 import webbrowser
 import os
 import re
+import entertainment_center
 
 
 # Styles and scripting for the page
@@ -155,9 +156,9 @@ def open_movies_page(movies):
     output_file = open('fresh_tomatoes.html', 'w')
 
     # Replace the movie tiles placeholder generated content
+
     rendered_content = main_page_content.format(
         movie_tiles=create_movie_tiles_content(movies))
-
     # Output the file
     output_file.write(main_page_head + rendered_content)
     output_file.close()
@@ -165,3 +166,5 @@ def open_movies_page(movies):
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
+
+open_movies_page(entertainment_center.movies)
