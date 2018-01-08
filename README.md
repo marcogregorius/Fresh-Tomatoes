@@ -2,7 +2,7 @@
 Fresh tomatoes is a website to display movies with their trailers. The back end of this website is written in Python for constructing the movie list.
 
 ## Download
-- Fork this Github [repository](https://github.com/marcogregorius/ud036_StarterCode)
+- Fork this Github [repository](https://github.com/marcogregorius/Fresh-Tomatoes)
 - Clone to your local repository by pasting below line into your command line:
   `git clone https://github.com/marcogregorius/ud036_StarterCode.git`
 
